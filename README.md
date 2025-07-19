@@ -10,6 +10,7 @@ This repository contains practical examples and tutorials for performing data an
 
 ## 📦 Installation
 Clone the repo and install dependencies:
+```bash
 git clone https://github.com/your-username/python-for-data-analysis.git
 cd python-for-data-analysis
 pip install -r requirements.txt
