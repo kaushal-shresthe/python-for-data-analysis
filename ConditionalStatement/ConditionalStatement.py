@@ -45,7 +45,12 @@ b = 5
 if a > b: print("a is greater")
 
 # Short Hand if...else
+# Example 1
 print("a" if a > b else "b")
+
+# Example 2
+marks = 80
+print("you will go to trip") if marks >= 80 else print("no phone for one month")
 
 
 # ❌ Is There a switch Statement in Python?

@@ -1,7 +1,7 @@
 a = 10  # 1010 in binary
 b = 4   # 0100 in binary
 
-print(bin(a)) # bin() function gives the bianry value
+print(bin(a))  # bin() function gives the binary value
 print(bin(b))
 # Bitwise AND
 print("a & b:", a & b)       # 1010 & 0100 = 0000 → 0
