@@ -51,6 +51,24 @@ else:
 
 
 # Program to check if a number is single-digit, 2-digit, ..., up to 5-digit
+
+# Method 1
+num = int(input("Enter a number here up to 5 digits: "))
+
+if num >= 0 and num <= 9:
+    print("It is a single digit number")
+elif num <= 99:
+    print("It is a double digit number")
+elif num <= 999:
+    print("It is a triple digit number")
+elif num <= 9999:
+    print("It is a four digit number")
+elif num <= 99999:
+    print("It is a five digit number")
+else:
+    print("Number is more than 5 digits")
+
+# Method 2
 num = input("Enter number: ").replace(" ", "")
 
 if num.startswith("-"):
@@ -73,5 +91,3 @@ else:
         print("5-digit number")
     else:
         print("More than 5-digit number")
-
-
