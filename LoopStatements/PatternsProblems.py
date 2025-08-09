@@ -203,3 +203,67 @@ for i in range(n, 0, -1):
         else:
             print(" ", end=" ")
     print()
+
+# Pattern 9: Hollow Diamond Star Pattern
+#     *
+#    * *
+#   *   *
+#  *     *
+# *       *
+#  *     *
+#   *   *
+#    * *
+#     *
+
+# Method 1:
+n = 5
+
+# Top half
+for i in range(1, n + 1):
+    for j in range(n - i):
+        print(" ", end=" ")
+
+    print("*", end=" ")
+
+    if i > 1:
+        for j in range(2 * i - 3):
+            print(" ", end=" ")
+
+        print("*", end=" ")
+    print()
+
+# Bottom half
+for i in range(n - 1, 0, -1):
+    for j in range(n - i):
+        print(" ", end=" ")
+
+    print("*", end=" ")
+
+    if i > 1:
+        for j in range(2 * i - 3):
+            print(" ", end=" ")
+
+        print("*", end=" ")
+    print()
+
+# Method 2
+n = 5
+total_rows = 2 * n - 1
+
+for i in range(1, total_rows + 1):
+    if i <= n:
+        stars_count = i
+    else:
+        stars_count = total_rows - i + 1
+
+    # Print leading spaces
+    print("  " * (n - stars_count), end="")
+
+    # Print stars and spaces inside
+    for j in range(1, 2 * stars_count):
+        if j == 1 or j == 2 * stars_count - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+
+    print()
