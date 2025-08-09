@@ -25,3 +25,19 @@ for i in range(1, length+1):
     reversed_string += UserInput[-i]
 print(f"Reversed String: {reversed_string}")
 
+
+# Write a program to write first 20 numbers and their squared numbers
+print("Number    Square")
+for i in range(1, 21):
+    print(f"{i}          {i**2}")
+
+# Write a program to check if a number is divisible by 8 and  12, up to 100 numbers
+print("Number is divisible by 8 and  12, up to 100 numbers:")
+for i in range(1, 101):
+    if i % 8 == 0 and i % 12 == 0:
+        print(i)
+
+
+
+
+
