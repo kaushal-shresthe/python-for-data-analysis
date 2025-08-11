@@ -55,6 +55,7 @@ print(txt.find("love"))   # 2 (index)
 print(txt.rfind("o"))     # 10 (last 'o')
 print(txt.index("Python")) # 7 (error if not found)
 print(txt.count("o"))     # 2
+print(txt.count("o", 6, 13))
 
 # Replacing
 
@@ -72,10 +73,15 @@ name = "Kaushal"
 print(name.isalpha())   # True (only letters)
 print(name.isdigit())   # False (not only numbers)
 print("123".isdigit())  # True
-print("hello123".isalnum()) # True (letters + numbers)
-print("hello".islower()) # True
-print("HELLO".isupper()) # True
+print("hello123".isalnum())  # True (letters + numbers)
+print("hello".islower())  # True
+print("HELLO".isupper())  # True
 print(" ".isspace())    # True (only whitespace)
+
+# It fills the given character and centralizes a string
+name = "Kaushal Shrestha"
+print(name.center(20, "*"))
+
 
 # String Formatting
 # f-strings (best way)
@@ -109,6 +115,48 @@ print("*".join("ABC")) # A*B*C
 # -> Strings cannot be changed in place:
 
 s = "Python"
-s[0] = "J"  # ❌ ERROR
-s = "J" + s[1:]  # ✅
+# s[0] = "J"  # ERROR
+s = "J" + s[1:]
 print(s)  # Jython
+
+
+# Some String Method
+a = "Kaushal Shrestha"
+# endswith() - Returns true if the string ends with the specified value
+print(a.endswith("a"))
+print(a.endswith("h", 3, 8))
+
+# startswith() - Returns true if the string starts with the specified value
+print(a.startswith("K"))
+print(a.startswith("k"))
+print(a.startswith("h", 4, 10))
+
+# swapcase() - Swaps case lower case to upper case and vice versa
+print(a.swapcase())
+
+# strip() - Returns a trimmed version og the string
+a = "     ***** Kaushal ............."
+print(a)
+print(a.strip("*, "))
+
+# split() = Splits the string at the specified separator, and returns a list
+a = "00FD#BRM#OEM#KID"
+b = "hello. my nmae is kaushal shrestha. i am 23 years old"
+c = "Ram Sita Gita Rita Hari Buddhi"
+print(a.split("#"))
+print(b.split("."))
+print(c.split(" "))
+
+# ljust() - Returns a left justified version of the string
+a = "Pokhara"
+x = a.ljust(20, "_")
+print(x, "is my favorite place")
+
+# rjust() -  Returns a right justified version of the string
+x = a.rjust(20, "_")
+print(x, "is my favorite place")
+
+# rindex() - Searches the string for a specified value and returns the last position of where it was found
+a = "My name is Kaushal Shrestha"
+print(a.rindex("Kaushal"))
+print(a.rindex("h", 8, 15))
