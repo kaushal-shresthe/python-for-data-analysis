@@ -30,16 +30,72 @@ UserInput = input("Enter the string input: ")
 words = len(UserInput.split())
 print(f"Number of words in a sentence is {words}")
 
-
-# TODO
-# Remove Spaces – Remove all spaces from a string.
-# Find Substring – Check if a specific word exists in a string.
-# Replace Word – Replace a given word in the string with another word.
-# Anagram Check – Check if two strings contain the same characters in any order.
-# Character Frequency – Count how many times each character appears in the string.
-# Title Case Conversion – Convert a string so that each word starts with a capital letter.
 # Find Longest Word – Find the longest word in a sentence.
+# Method 1
+text = "Python is beginner friendly language"
+longest = ""
+start = 0
+for i in range(len(text) + 1):
+    if i == len(text) or text[i] == " ":
+        temp = text[start:i]
+        if len(temp) > len(longest):
+            longest = temp
+        start = i + 1
+
+print(f"Longest word: {longest}")
+
+# Method 2
+text = "Python is beginner friendly language"
+longest = ""
+
+for word in text.split():
+    if len(word) > len(longest):
+        longest = word
+
+print(f"Longest word: {longest}")
+
+# Method 2
+text = "Python is beginner friendly language"
+longest = max(text.split(), key=len)
+print(f"Longest word: {longest}")
+
 # Remove Duplicate Characters – Remove repeated characters from a string.
+text = "Python is beginner friendly language"
+text = text.lower()
+
+result = ""
+for i in range(len(text)):
+    if text[i] not in result:
+        result += text[i]
+
+print("Without duplicates:", result)
+
 # Check Only Digits – Verify if the string contains only numeric characters.
+text = "12345"
+result = text.isdigit()
+if result:
+    print("It contains only numeric characters")
+else:
+    print("It does not contain only numeric characters")
+
 # Swap Case – Change lowercase letters to uppercase and vice versa.
+String = "KaUsHaL ShResTHa"
+result = ""
+
+for char in String:
+    if char.islower():
+        result += char.upper()
+    else:
+        result += char.lower()
+
+print(result)
+
 # Count Special Characters – Count characters that are neither letters nor numbers.
+gmail = "KaushalShrestha441@gmail.com ^&*"
+count = 0
+for char in gmail:
+    if char.isalnum() or char.isspace():
+        continue
+    count = count + 1
+
+print(f"Number of Special Characters: {count}")
