@@ -27,6 +27,12 @@ print(word[2:])   # thon
 print(word[:4])   # Pyth
 print(word[::-1]) # nohtyP (reverse string)
 
+num = "0123456789"
+print(num[::2])
+print(num[:7:2])
+print(num[6::-1])
+
+
 # 3. String Concatenation & Repetition
 a = "Hello"
 b = "World"

@@ -99,3 +99,19 @@ for char in gmail:
     count = count + 1
 
 print(f"Number of Special Characters: {count}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

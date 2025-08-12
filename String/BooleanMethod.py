@@ -13,11 +13,11 @@ text = "123"
 print(text.isdecimal())  # True - only decimal digits
 
 # 4. isdigit() -> True if all characters are digits (includes superscripts, etc.)
-text = "²3"
+text = "3^2"
 print(text.isdigit())  # True - includes superscript ²
 
 # 5. isnumeric() -> True if all characters are numeric (includes fractions, Roman numerals, etc.)
-text = "⅓"
+text = "1/3"
 print(text.isnumeric())  # True - fraction one-third
 
 # 6. isidentifier() -> True if the string is a valid Python identifier
