@@ -32,36 +32,13 @@ print(country[1:])               # ['USA', 'China', 'Russia', 'Australia'] ->  f
 print(country[::2])              # ['Nepal', 'China', 'Australia'] -> gap of 2
 print(country[::-1])             # ['Australia', 'Russia', 'China', 'USA', 'Nepal'] ->  reversed list
 
-# ----------------------------------------------
-# Modifying a List (since lists are mutable)
-# ----------------------------------------------
-fruits[1] = "orange"             # Changing 'mango' to 'orange'
-print(fruits)
-
-# Adding elements
-fruits.append("grapes")          # Add at the end
-print(fruits)
-
-fruits.insert(1, "pineapple")    # Insert at index 1
-print(fruits)
-
-# Removing elements
-fruits.remove("banana")          # Removes 'banana' by value
-print(fruits)
-
-popped_item = fruits.pop(0)      # Removes and returns the item at index 0
-print(f"Removed: {popped_item}")
-print(fruits)
-
 # Looping through a List
-
 for fruit in fruits:
     print(fruit)
 
 # Using index in loop
 for i in range(len(fruits)):
     print(f"Index {i}: {fruits[i]}")
-
 
 # Checking if an item exists
 if "apple" in fruits:
