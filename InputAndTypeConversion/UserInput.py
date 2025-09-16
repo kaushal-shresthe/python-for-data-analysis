@@ -7,3 +7,6 @@ print("Hello", name)
 # Input → Kaushal
 # Output → Hello Kaushal
 
+# Formatting numbers
+price = float(input("Enter item price: "))
+print(f"The Price of item is Rs.{price:.2f}")

@@ -53,9 +53,9 @@ marks = 80
 print("you will go to trip") if marks >= 80 else print("no phone for one month")
 
 
-# ❌ Is There a switch Statement in Python?
+# Is There a switch Statement in Python?
 # No, Python does not have a built-in switch or case statement like C, Java, or JavaScript.
-# ✅ But You Can Use if...elif...else or a Dictionary Instead.
+# But You Can Use if...elif...else or a Dictionary Instead.
 
 # Using if...elif...else
 day = 3
@@ -95,4 +95,4 @@ match day:
     case _:
         print("Invalid day")
 
-# ✅ match-case is Python’s modern alternative to switch from version 3.10+.
+# match-case is Python’s modern alternative to switch from version 3.10+.

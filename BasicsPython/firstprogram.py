@@ -14,4 +14,16 @@ How are you?
 # \n is used to break lines within a string
 print("I am fine\nAnd you?")
 
+# Line Continuation
+# Long statements can be split using \ or inside parentheses.
+x = 10 + 20 + 30 + 40\
++ 23 + 45
+
+# or
+
+y = (10 + 20 + 30 + 40
++ 23 + 45)
+
+print(x)
+print(y)
 
