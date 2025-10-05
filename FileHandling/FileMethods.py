@@ -79,7 +79,8 @@ file.close()
 
 # writelines(list) -> Writes list of strings to file
 file = open("test.txt", "w")
-content = ["I am one\n", "I am Two\n", "I am Three\n", "I am Four\n", "I am Five\n"]
+content = ["I am first line\n", "I am second line\n", "I am third line\n", "I am fourth line\n", "I am sixth line\n"]
 file.writelines(content)
 file.close()
 
+# Common file modes
