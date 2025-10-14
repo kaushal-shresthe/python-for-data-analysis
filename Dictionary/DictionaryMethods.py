@@ -4,7 +4,6 @@
 Employee_Data = {"Name": "Jhon", "Age": 24, "Gender": "Male"}
 print(Employee_Data.keys())
 
-
 # 2. .values() -> returns all values
 print(Employee_Data.values())
 
@@ -15,12 +14,10 @@ print(Employee_Data.items())
 print(Employee_Data.get("Age"))
 print(Employee_Data.get("Salary", 0))
 
-
 # 5 .update({...}) -> update dictionary with new key-value pairs
 Employee_Data.update({"Age": 18})
 Employee_Data.update({"Salary": 50000})
 print(Employee_Data)
-
 
 # 6 .pop(key)-> removes and returns the value of the given key
 x = Employee_Data.pop("Age")

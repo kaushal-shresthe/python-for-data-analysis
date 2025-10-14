@@ -66,8 +66,6 @@ dict2 = {"b": 20, "c": 30, "d": 40}
 common_keys = list(dict1.keys() & dict2.keys())
 print(common_keys)
 
-
-
 # Nested Dictionary from Two Lists
 # Convert:
 # students = ["John", "Alice"]
@@ -83,3 +81,29 @@ for i in range(len(students)):
     nesteddict[f"student{i+1}"] = {"name": students[i], "score": scores[i]}
 
 print(nesteddict)
+
+# Count occurrences of characters in a string
+text = "python programming"
+char_count = {}
+for char in text:
+    char_count[char] = char_count.get(char, 0) + 1
+print(char_count)
+
+# Merge two dictionaries
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 3, "c": 4}
+dict1.update(dict2)
+print(dict1)
+
+# Filter dictionary based on values
+scores = {"Alice": 85, "Bob": 72, "Charlie": 90}
+high_scores = {k: v for k, v in scores.items() if v > 80}
+print(high_scores)
+
+# Student Grades (Nested Dictionary + List)
+students = {
+    "Kaushal": [85, 90, 88],
+    "Maya": [78, 82, 80]
+}
+for student, marks in students.items():
+    print(f"{student}: Average = {sum(marks)/len(marks)}")

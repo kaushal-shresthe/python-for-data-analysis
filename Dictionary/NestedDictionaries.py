@@ -6,6 +6,11 @@ Employee_Data = {
 
 print(Employee_Data)
 
+# Iterate nested dictionary
+for employee, info in Employee_Data.items():
+    print(employee)
+    for k, v in info.items():
+        print(f"  {k}: {v}")
 
 # Accessing Data
 print(Employee_Data["E003"]["Age"])
