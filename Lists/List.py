@@ -45,3 +45,13 @@ if "apple" in fruits:
     print("Apple is in the list.")
 else:
     print("Apple is not in the list.")
+
+# list Update
+# Assign a new value to an index
+numbers = [10, 15, 20, 30, 40, 50, 60]
+numbers[0] = 5
+print(numbers)
+
+# Update the multiple element using slicing
+numbers[1:4] = [100, 110, 120]
+print(numbers)

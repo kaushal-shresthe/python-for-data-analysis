@@ -26,3 +26,8 @@ B.sort()
 print(f"Largest value is {B[-1]}")
 print(f"Smallest value is {B[0]}")
 
+# Concatenate [1,2,3] and [4,5] and multiply the result by 2.
+list1 = [1, 2, 3]
+list2 = [4, 5]
+result = (list1 + list2) * 2
+print(result)
